@@ -1,11 +1,9 @@
 <?php
-/*
-*Сортировка вставкой
-*/
+
+//Сортировка вставкой
+
 $numbers = [1,13,9,2,4,7,11,8,6,10,5,3,12];
-/**
- * @return @var Array|Number sort
- */
+
 function insertSort(array $arr)
 {
     for($i = 1; $i<count($arr); $i++){
