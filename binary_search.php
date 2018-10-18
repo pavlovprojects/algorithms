@@ -1,5 +1,4 @@
 <?php
-
 $randomArray=array();
 
 for ($i=0; $i<1000; $i++)               // заполнение массива
