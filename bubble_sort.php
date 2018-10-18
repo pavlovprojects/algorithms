@@ -1,8 +1,8 @@
-<?php 
+<?
 
 // Сортировка пузырьком
 
-$data = array(8,4,1,9,5,7,3,2,6,0);
+$data = array(3,5,15,3,2,6,7,50,1,4,5,2,100,9,3,2,6,7,13,18);
 
 function bubblesort($data) {
     $data_length = count($data);
@@ -18,4 +18,10 @@ function bubblesort($data) {
 $data = bubblesort($data);
 print_r($data);
 
+function swappositions($data, $left, $right) {
+    $backup_old_data_right_value = $data[$right];
+    $data[$right] = $data[$left];
+    $data[$left] = $backup_old_data_right_value;
+    return $data;
+    }
 ?>
